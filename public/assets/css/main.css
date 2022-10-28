@@ -1,10 +1,39 @@
-/*::before,*/
-/*::after{*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*    border: 0;*/
-/*    box-sizing: border-box;*/
-/*}*/
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+
+@EvgeniiDu
+EvgeniiDu
+/
+designer_furniture_shop
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+designer_furniture_shop/public/assets/css/main.css
+@EvgeniiDu
+EvgeniiDu home page
+Latest commit 8057221 2 days ago
+History
+1 contributor
+546 lines (490 sloc)  9.03 KB
+
+    /*::before,*/
+    /*::after{*/
+    /*    padding: 0;*/
+    /*    margin: 0;*/
+    /*    border: 0;*/
+    /*    box-sizing: border-box;*/
+    /*}*/
 a{
     text-decoration: none;
 }
@@ -302,6 +331,7 @@ body{
 .hot_products{
     height: 492px;
 }
+
 .hot_header{
     padding-left: 135px;
     padding-top: 10px;
@@ -310,6 +340,7 @@ body{
     background: #FF3B3B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .hot_header span {
     margin-left: 10px;
     align-items: center;
@@ -328,7 +359,9 @@ body{
 }
 
 .hot_content{
-    height: 492px;
+    height: 452px;
+    max-width: 1280px;
+    margin: 0px auto;
 }
 .image_product{
     width: 276px;
@@ -339,9 +372,56 @@ body{
     width: 280px;
 }
 .descrip_product{
+    margin-top: 34px;
     display: block;
+    height: 204px;
 }
+.descrip_product div{
+     padding-top: 10px;
 
+}
+.descrip_product div label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #000000;
+}
+.info_span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+.title_prod span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+
+    color: #000000;
+}
+.price_prod{
+    margin-left: 120px;
+}
+.price_prod span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+
+    color: #000000;
+}
 .top_header{
     height: 40px;
     background: #FF3B3B;
@@ -361,7 +441,7 @@ body{
 }
 .preference_list{
     display: flex;
-    margin: 62px auto;
+    margin: 62px 140px auto;
     justify-content: space-between;
     max-width: 1280px;
     padding: 0;
@@ -386,13 +466,13 @@ body{
 }
 
 .mailing_list{
-    height: 274px;
+    height: 416px;
     display: flex;
 
 }
 .icon_mail img{
     margin-left: 27px;
-    margin-top: 5px;
+    margin-top: 77px;
 }
 .subscribe_container{
     display: block;
@@ -400,6 +480,7 @@ body{
 }
 .header_subscribe{
     margin-left: 165px;
+    margin-top: 80px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -465,6 +546,10 @@ body{
 .social_item{
     padding-left: 12px;
 }
+.owl-carousel {
+    height: 452px;
+}
+
 /*Footer----------------------------------------------*/
 .footer{
     height: 307px;
@@ -475,7 +560,7 @@ body{
 }
 .footer_container{
     max-width: 1180px;
-    margin: 33px auto;
+    margin: 33px 170px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -522,7 +607,7 @@ body{
 }
 .copyright{
     margin-top: 50px;
-    margin-left: 132px;
+    margin-left: 170px;
     height: 16px;
 }
 .copyright_text{
@@ -542,5 +627,3 @@ body{
 }
 
 
-
-/*------------------------------------------------------------------------------------------*/
