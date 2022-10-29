@@ -113,13 +113,14 @@
     <main class="main">
         <div class="main_container">
 {{--            <div>--}}
-{{--                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores assumenda blanditiis consequuntur dignissimo.--}}
-{{--            </div>--}}
-{{--            <div>--}}
-{{--                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores assumenda blanditiis consequuntur dignissimo.--}}
-{{--            </div>--}}
-{{--            <div>--}}
-{{--                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci asperiores assumenda blanditiis consequuntur dignissimo.--}}
+{{--                <div class="owl-carousel main-slide ">--}}
+{{--                    <div class="item">--}}
+{{--                        <div class="poster1"></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="item">--}}
+{{--                        <div class="poster2"></div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 {{--            </div>--}}
         </div>
         <div class="hot_products">

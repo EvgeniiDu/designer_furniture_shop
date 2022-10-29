@@ -262,7 +262,7 @@ body{
 .likes_cart{
     display: flex;
     margin-left: 120px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
@@ -370,6 +370,7 @@ body{
 .item{
     height: 444px;
     width: 280px;
+    margin: 5px auto;
 }
 .descrip_product{
     margin-top: 34px;
@@ -625,5 +626,38 @@ body{
     margin-top: 18px;
     background-image: url(images/arrows.png);
 }
+/*Owl-carousel------------------------------------------*/
+/*hot_products---------------------*/
+.owl-carousel-hot-products .owl-nav button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.owl-carousel-hot-products .owl-nav button img{
+   width: 21px;
+   height: 94px;
+}
 
+.owl-carousel-hot-products .owl-nav .owl-prev{
+    left: -50px;
+}
+.owl-carousel-hot-products .owl-nav .owl-next{
+    right: -50px;
+}
+/*top_products---------------------*/
+.owl-carousel-top-products .owl-nav button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.owl-carousel-top-products .owl-nav button img{
+    width: 21px;
+    height: 94px;
+}
 
+.owl-carousel-top-products .owl-nav .owl-prev{
+    left: -60px;
+}
+.owl-carousel-top-products .owl-nav .owl-next{
+    right: -60px;
+}
