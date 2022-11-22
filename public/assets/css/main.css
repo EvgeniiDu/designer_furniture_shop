@@ -174,23 +174,46 @@ body{
     margin-top: 15px;
 }
 .border {
-
     width: 180px;
-    /*height: 30px;*/
-    border: solid 1px #000000;
+    height: 30px;
+    position: relative;
     background: #FFFFFF;
+    border: 0.5px solid #000000;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+    border-radius: 5px;
     box-sizing: border-box;
     margin:  0px 18px 0px 0px;
 }
-.btn{
-    width: 170px;
+.item_icon_btn{
+    position: absolute;
+    top:-10px;
+    right: 8px;
+}
+.btn_item{
+    vertical-align: middle;
+    padding-left: 13px;
+    text-decoration: none;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 300;
     font-size: 16px;
+    line-height: 19px;
     letter-spacing: 0.05em;
 
     color: #000000;
+}
+.btn:active{
+    border: none;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn:focus {
+    border: none;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
 }
 .icon_btn{
     width: 32px;
@@ -213,7 +236,7 @@ body{
 }
 .search_item{
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 .form_search{
@@ -256,8 +279,8 @@ body{
     margin-top: 5px;
 }
 .likes_count{
-    margin-left: 15px;
-    margin-top: 5px;
+    text-align: center;
+    margin: auto;
 }
 .likes_cart{
     display: flex;
@@ -280,7 +303,9 @@ body{
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 }
-
+.cart_count{
+    margin: 3px auto;
+}
 .header_menu{
 
     min-width: 1440px;
@@ -319,14 +344,59 @@ body{
 .main {
     display: block;
     flex: 1 1 auto;
-
 }
 .main_container{
     height: 844px;
-    background-image: url(images/poster.jpg);
     padding: 0px;
     text-align: center;
+}
+.header_main_container p{
+    margin-top: 172px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 112px;
+    letter-spacing: 0.05em;
 
+    color: #FFFFFF;
+}
+
+.text_main1 p{
+    margin: 32px auto;
+    max-width: 775px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+.text_main2 p{
+    margin: 42px auto;
+    max-width: 775px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+.item_poster1{
+    height: 844px;
+    width: 100%;
+    background-image: url(images/poster2.jpg);
+}
+.item_poster2{
+    height: 844px;
+    width: 100%;
+    background-image: url(images/poster.jpg);
 }
 .hot_products{
     height: 492px;
@@ -363,7 +433,15 @@ body{
     max-width: 1280px;
     margin: 0px auto;
 }
+.icon_product{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 32px;
+    height: 19px;
+}
 .image_product{
+    position: relative;
     width: 276px;
     height: 182px;
 }
@@ -390,13 +468,17 @@ body{
 
     color: #000000;
 }
+.info_div{
+    display: flex;
+    justify-content: space-between;
+}
+
 .info_span{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 14px;
-    text-transform: capitalize;
 
     color: #000000;
 }
@@ -406,7 +488,6 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-
 
     color: #000000;
 }
@@ -472,12 +553,12 @@ body{
 
 }
 .icon_mail img{
-    margin-left: 27px;
+    margin-left: 47px;
     margin-top: 77px;
 }
 .subscribe_container{
     display: block;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 .header_subscribe{
     margin-left: 165px;
@@ -522,7 +603,7 @@ body{
 }
 
 .subscribe_submit{
-    width: 125px;
+    width: 130px;
     transform: rotate(-180deg);
     margin-left: 36px;
     margin-top: 12px;
@@ -660,4 +741,583 @@ body{
 }
 .owl-carousel-top-products .owl-nav .owl-next{
     right: -60px;
+}
+
+
+/*Catalog====================================================================*/
+.catalog_products_header{
+    display: flex;
+    height: 40px;
+    background: #FF3B3B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px auto;
+}
+.header_block{
+    max-width: 1180px;
+    margin-left: 165px;
+}
+.block{
+    margin-top: 6px;
+}
+.block span {
+    margin-left: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+}
+.block img{
+    height: 25px;
+    width: 22px;
+}
+.catalog_content{
+    display: flex;
+    height: 452px;
+    max-width: 1180px;
+    margin: 0px auto;
+}
+.description_block_right{
+    position: relative;
+    margin: 0px auto;
+    text-align: right;
+}
+.description_block_left{
+    position: relative;
+    margin: 0px auto;
+    text-align: left;
+}
+.title_product{
+    margin-top: 55px;
+}
+.title_product span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+.description_product{
+    margin: 90px auto;
+    height: 76px;
+    width: 476px;
+}
+.description_product p{
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.border_btn_review_right{
+    position: absolute;
+    right: 0;
+    width: 180px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.border_btn_review_left{
+    position: absolute;
+    left: 0;
+    width: 180px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.btn_link{
+    position: absolute;
+    width: 119px;
+    height: 15px;
+    left: calc(50% - 119px/2 + 0.5px);
+    top: calc(50% - 15px/2 - 2.5px);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+
+}
+/*Register=============================================================*/
+.auth_container{
+    height: 804px;
+    display: flex;
+}
+.register_block{
+    width: 580px;
+}
+.auth_header{
+    display: flex;
+    height: 40px;
+    background: #FF3B3B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px auto;
+}
+.input_block{
+    display:compact;
+}
+.label_block{
+    margin-left: 113px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+.label_block:after {
+    content: "*";
+    color: #E93E3E;
+}
+.input_line{
+    margin-left: 100px;
+    width: 480px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+input::placeholder {
+    padding-left: 35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: #B9B9B9;
+}
+.btn_auth_container{
+    margin-left: 356px;
+}
+.button_auth{
+    margin-top: 122px;
+    width: 224px;
+    height: 30px;
+    background: #FD5252;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.btn_reg{
+    margin-top: -7px;
+}
+.form_block{
+    margin-top: 60px;
+}
+.btn_reg span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.logo_social_block{
+    margin-left: 84px;
+    margin-top: 85px;
+}
+.logo_block{
+    margin-top: 160px;
+}
+.logo_row_unique{
+    margin-top: 20px;
+    margin-left: 138px;
+}
+.logo_text{
+    margin-left: 10px;
+}
+.text_block_verify{
+    width: 467px;
+}
+.text_block_verify p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+.btn_logout{
+    margin-left: 256px;
+    margin-top: 60px;
+    width: 224px;
+    height: 30px;
+    background: #FD5252;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.btn_logout span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.register_block_verify_email{
+    width: 580px;
+    margin-left: 113px;
+    margin-top: 150px;
+}
+.btn_resend_email{
+    width: 480px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.btn_resend_email span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.logo_block_verify{
+    margin-top: 312px;
+}
+.social_block_register{
+    text-align: center;
+}
+/*Login===============================================================*/
+.auth_container_login{
+    height: 804px;
+    display: block;
+}
+.input_block{
+    margin-top: 126px;
+}
+.btn_login_container{
+    margin-top: 29px;
+    margin-left: 100px;
+}
+.button_login{
+    margin-left: 105px;
+    width: 224px;
+    height: 30px;
+    background: #FD5252;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.btn_login{
+    margin-top: -7px;
+}
+.btn_login span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.restoration_pass{
+    text-decoration: none;
+}
+.restoration_pass span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration-line: underline;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+.logo_block_login_page{
+    margin: 142px 0px 0px 370px;
+}
+.login_block{
+    display: flex;
+}
+.social_block{
+    margin-left: 216px;
+    margin-top: 152px;
+    text-align: center;
+}
+.link_google{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+.header_social{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.google_block{
+    margin-top: 30px;
+    text-align: center;
+}
+/*Reset password===========================================================*/
+.auth_container_reset{
+    height: 804px;
+    max-width: 1180px;
+    margin: 0px 70px auto;
+}
+.reset_block{
+    margin-top: 67px;
+}
+.input_block_reset{
+    margin-top: 70px;
+}
+.btn_reset_container{
+    margin-top: 49px;
+    margin-left: 250px;
+}
+
+/*Profile=================================================================*/
+.profile_main_container{
+    height: 804px;
+    display: block;
+}
+.profile_data_block{
+    margin-top: 90px;
+    display: flex;
+}
+
+.nav_block{
+    margin-top: 30px;
+    width: 280px;
+    height: 240px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.line_name{
+    width: 280px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.line_name span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+.icon_profile{
+    margin-left: 33px;
+    margin-right: 19px;
+}
+.nav_items{
+    margin-top: 37px;
+    padding: 0;
+}
+.nav_item span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+.nav_item a{
+    text-decoration: none;
+}
+
+.logo_block_profile{
+    margin-top: 171px;
+    margin-left: 420px;
+}
+
+/*-----------*/
+.info_block{
+    margin-left: 20px;
+}
+.line_header{
+    width: 780px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.line_header span{
+    margin-left: 13px;
+    ont-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+}
+.input_block_profile{
+    margin-top: 37px;
+    display: flex;
+    justify-content: space-between;
+}
+.label_name label{
+    margin-left: 13px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.input_line_profile{
+    padding-left: 35px;
+    width: 380px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.form_exit{
+    margin-left: 4px;
+}
+.form_exit a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.exit{
+    display: flex;
+}
+.change_pass_btn{
+    text-align: center;
+    width: 199px;
+    height: 30px;
+    background: #FD5252;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.change_pass_btn a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+.logo_block_change_pass{
+    margin-top: 71px;
+    margin-left: 501px;
+}
+.edit_profile_btn{
+    text-align: center;
+    width: 380px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.edit_profile_btn a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-decoration: none;
+}
+.catalog_btn{
+    width: 380px;
+    height: 30px;
+    text-align: center;
+    background: #45A148;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.catalog_btn a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.btn_save_edit{
+    margin-top: 50px;
+}
+.btn_save_edit input{
+    width: 380px;
+    height: 30px;
+    background: #45A148;
+    border: 0.5px solid #000000;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #FFFFFF;
 }
